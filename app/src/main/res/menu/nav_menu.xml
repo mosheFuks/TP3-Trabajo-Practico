@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Menu lateral izquierdo -->
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -26,7 +27,6 @@
             android:id="@+id/nav_fragment_list"
             android:icon="@drawable/baseline_favorite_24"
             android:title="Favoritos"/>
-
     </group>
 
 

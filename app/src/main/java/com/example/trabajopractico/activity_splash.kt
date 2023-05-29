@@ -10,6 +10,8 @@ class activity_splash : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+        supportActionBar?.hide()
+
         Handler().postDelayed({
             //val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:911"))
 
