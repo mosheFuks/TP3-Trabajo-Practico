@@ -15,7 +15,7 @@ class activity_splash : AppCompatActivity() {
         Handler().postDelayed({
             //val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:911"))
 
-            var intent = Intent(this, MainActivity::class.java)
+            var intent = Intent(this, LoguinActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

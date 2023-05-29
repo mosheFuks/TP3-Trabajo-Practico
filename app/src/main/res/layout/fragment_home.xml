@@ -5,13 +5,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#03A9F4"
-    tools:context=".MainActivity">
+    tools:context=".fragment_home">
 
-   <!-- <androidx.appcompat.widget.Toolbar
+    <!-- TODO: Update blank fragment layout -->
+    <!--androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         app:titleMarginStart="90dp">
 
         <ImageView
@@ -20,34 +21,22 @@
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_density_medium_24" />
 
-        <TextView
+        <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:text="Premier"
-            android:fontFamily="@font/firasans_bold"
-            android:textSize="23dp"
-            android:textColor="@color/white"
-            android:background="#001D42"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RentCar"
-            android:fontFamily="@font/firasans_bold"
-            android:textSize="23dp"
-            android:textColor="@color/black"
-            android:background="#FFCC00"/>
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/logo" />
 
         <ImageView
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:src="@drawable/avatar_car"
-            android:layout_marginLeft="77dp" />
+            android:id="@+id/avatarCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/avatar_car" />
 
-    </androidx.appcompat.widget.Toolbar> -->
+    </androidx.appcompat.widget.Toolbar-->
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
