@@ -51,13 +51,7 @@ class fragment_list : Fragment() {
         linearLayoutManager = LinearLayoutManager(context)
 
         car_list.layoutManager = linearLayoutManager
-        contactoListAdapter = CarListAdapter(cars) { x ->
-            onItemClick(x)
-        }
+        contactoListAdapter = CarListAdapter(cars)
         car_list.adapter = contactoListAdapter
-    }
-    fun onItemClick ( position : Int ) : Boolean{
-        Snackbar.make(v,position.toString(),Snackbar.LENGTH_SHORT).show()
-        return true
     }
 }
