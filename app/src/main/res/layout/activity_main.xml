@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +17,7 @@
 
     <!-- Navigation View -->
     <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawerLayout"
+        android:id="@+id/drawer_layout_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,7 +32,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="100dp"
                 android:background="@color/white"
                 app:titleMarginStart="90dp">
 
@@ -79,6 +80,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:background="@color/white"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/black"
             app:headerLayout="@layout/nav_header"
             app:menu="@menu/nav_menu" />
 
