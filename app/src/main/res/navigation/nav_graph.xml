@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragment_home">
+    app:startDestination="@id/fragment_loguin">
 
     <fragment
         android:id="@+id/fragment_list"
@@ -36,5 +36,14 @@
         <action
             android:id="@+id/action_fragment_home_to_fragment_list"
             app:destination="@id/fragment_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_loguin"
+        android:name="com.example.trabajopractico.fragment_loguin"
+        android:label="fragment_loguin"
+        tools:layout="@layout/fragment_loguin" >
+        <action
+            android:id="@+id/action_fragment_loguin_to_fragment_home"
+            app:destination="@id/fragment_home" />
     </fragment>
 </navigation>

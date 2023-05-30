@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">PremierRentCar</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hintUsername">User Name</string>
+    <string name="hintPassword">Password</string>
+    <string name="forgot_pass">Olvide la contraseña</string>
+    <string name="loguin_button">Ingresar</string>
+    <string name="notification">Notificaciones</string>
 </resources>

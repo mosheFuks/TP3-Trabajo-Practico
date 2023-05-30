@@ -1,5 +1,5 @@
 package com.example.trabajopractico
 
-import com.example.trabajopractico.entites.Cars
+import com.example.trabajopractico.entities.Car
 
-data class CarsPaginateResponse(val list : List<Cars>)
+data class CarsPaginateResponse(val list : List<Car>)
