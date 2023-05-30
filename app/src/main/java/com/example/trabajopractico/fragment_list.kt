@@ -27,7 +27,7 @@ class fragment_list : Fragment() {
                 override fun onResponse(call: Call<List<Cars>>, response: Response<List<Cars>>){
                     if(response.isSuccessful){
                         val apiResponse = response.body()!!
-                        Log.d("CARS", apiResponse.get(0).model)
+                        Log.d("CARS", apiResponse.toString())
 //                        for (data in apiResponse!!.list!!) {
 //                            simpsonsCharactersList.add(data)
 //                        }
