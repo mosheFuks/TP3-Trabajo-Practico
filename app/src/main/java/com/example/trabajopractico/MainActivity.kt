@@ -18,19 +18,23 @@ class MainActivity : AppCompatActivity() {
         val userName = intent.getStringExtra("userName")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(fragment_home(), userName.toString())
+        replaceFragment(fragment_home())
 
 
         binding.bottomNavigationView.setOnItemSelectedListener {
 
             when(it.itemId){
-                R.id.home -> replaceFragment(fragment_home(), userName.toString())
+                R.id.home -> replaceFragment(fragment_home())
                 R.id.autos -> replaceFragment(fragment_list())
                 R.id.perfil -> replaceFragment(fragment_profile(), userName.toString())
+            }
+            true
+        }
 
-                else ->{
-
-                }
+        binding.navigationView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.profile -> replaceFragment(fragment_profile(), userName.toString())
+                R.id.setting -> replaceFragment(fragment_setting())
             }
             true
         }
@@ -41,10 +45,14 @@ class MainActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
 
         //Generar un Bundle para pasar parametros entre un Activity y un Fragment(Aca se pasa el nombre de usuario)
-        var dataBundle = Bundle()
-        dataBundle.putString("userName", userData);
+        if (userData.isNotEmpty()) {
+            var dataBundle = Bundle()
+            dataBundle.putString("userName", userData);
+            fragment.arguments = dataBundle
+            val headerFragment = nav_header();
+            headerFragment.arguments = dataBundle
+        }
 
-        fragment.arguments = dataBundle
         fragmentTransaction.replace(R.id.frame_layout,fragment)
         fragmentTransaction.commit()
     }
