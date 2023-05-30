@@ -14,6 +14,10 @@ class CarHolder(v: View) : RecyclerView.ViewHolder(v)  {
         this.view = v
     }
 
+    fun getCardLayout (): CardView {
+        return view.findViewById(R.id.card_package_item)
+    }
+
     fun setClass(clase: String) {
         val txt: TextView = view.findViewById(R.id.txt_class)
         txt.text = clase

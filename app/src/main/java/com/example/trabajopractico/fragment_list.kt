@@ -1,16 +1,15 @@
 package com.example.trabajopractico
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trabajopractico.adapter.CarListAdapter
 import com.example.trabajopractico.entities.Car
+import com.google.android.material.snackbar.Snackbar
 
 class fragment_list : Fragment() {
 
@@ -22,7 +21,7 @@ class fragment_list : Fragment() {
 
     private lateinit var linearLayoutManager: LinearLayoutManager
 
-    private var contactoListAdapter: CarListAdapter?=null
+    private lateinit var contactoListAdapter: CarListAdapter
 
     companion object {
         fun newInstance() = fragment_list()
@@ -32,7 +31,7 @@ class fragment_list : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         v = inflater.inflate(R.layout.fragment_list, container, false)
-        car_list = v.findViewById<RecyclerView>(R.id.carList)
+        car_list = v.findViewById(R.id.carList)
         return v
     }
 
@@ -52,8 +51,13 @@ class fragment_list : Fragment() {
         linearLayoutManager = LinearLayoutManager(context)
 
         car_list.layoutManager = linearLayoutManager
-
+        contactoListAdapter = CarListAdapter(cars) { x ->
+            onItemClick(x)
+        }
         car_list.adapter = contactoListAdapter
-
+    }
+    fun onItemClick ( position : Int ) : Boolean{
+        Snackbar.make(v,position.toString(),Snackbar.LENGTH_SHORT).show()
+        return true
     }
 }
