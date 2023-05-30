@@ -3,15 +3,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50"
-    tools:context=".fragment_setting">
+    android:id="@+id/frame_setting"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Setting"
-        android:textSize="26dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="#FCFCFF"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="0dp">
 
+        <!--  <RelativeLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/frame_502"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              >-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/configuracionText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:id="@+id/configuracionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Generales"
+                        android:textColor="#1B72C0"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="4sp"
+                        android:translationY="-1.8sp"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/modoOscuro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Modo Oscuro"
+                        android:textColor="#001E2F"
+                        android:lineSpacingExtra="5sp"
+                        android:gravity="center_vertical"
+                        android:letterSpacing="0.01"
+                        android:textSize="16dp" />
+
+                    <Switch
+                        android:id="@+id/switchNightMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/notificaciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Notificaciones"
+                        android:textColor="#001E2F"
+                        android:lineSpacingExtra="5sp"
+                        android:gravity="center_vertical"
+                        android:letterSpacing="0.01"
+                        android:textSize="16dp" />
+
+                    <Switch
+                        android:id="@+id/switchNotifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout> -->
+                <!--  <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchNotificationsf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="Activar notificaciones"
+                        android:thumb="@drawable/handle"
+                        app:track="@drawable/switch_track" /> -->
+          </LinearLayout>
+    <!--   </RelativeLayout>-->
+ </androidx.cardview.widget.CardView>
 </FrameLayout>

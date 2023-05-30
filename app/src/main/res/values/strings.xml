@@ -6,4 +6,6 @@
     <string name="forgot_pass">Olvide la contraseña</string>
     <string name="loguin_button">Ingresar</string>
     <string name="notification">Notificaciones</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
 </resources>
