@@ -26,6 +26,6 @@ class CarListAdapter(
         holder.setTransmission(carLista[position].transmission)
         holder.setYear(carLista[position].year)
         holder.setFuelType(carLista[position].fuel_type)
-
+        holder.setGravatar(carLista[position].make)
     }
 }
