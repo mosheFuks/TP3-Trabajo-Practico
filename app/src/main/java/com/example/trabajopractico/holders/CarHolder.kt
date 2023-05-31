@@ -24,7 +24,9 @@ class CarHolder(v: View) : RecyclerView.ViewHolder(v)  {
 
     fun setFullCarName(make: String, model: String) {
         val txt: TextView = view.findViewById(R.id.txt_full_car_name)
-        txt.text = mayusFirstLetter("$make $model")
+        val mayusMake = mayusFirstLetter(make)
+        val mayusModel = mayusFirstLetter(model)
+        txt.text = "$mayusMake $mayusModel"
     }
 
     fun setTransmission(transmission: String) {
