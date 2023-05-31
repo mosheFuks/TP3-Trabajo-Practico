@@ -25,12 +25,6 @@ class fragment_home : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val vista = inflater.inflate(R.layout.fragment_home, container, false)
-
-        //Obtener el nombre del usuario
-        val dataBundle = arguments
-        val value = dataBundle!!.getString("userName")!!
-
-
         return vista;
     }
 }
