@@ -42,19 +42,31 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/baseline_density_medium_24" />
 
-                <ImageView
-                    android:id="@+id/logo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
-                    android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="Premier"
+            android:fontFamily="@font/firasans_bold"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:background="#3330E5"/>
 
-                <ImageView
-                    android:id="@+id/avatarCar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:src="@drawable/avatar_car" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RentCar"
+            android:fontFamily="@font/firasans_bold"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:background="#FFCC00"/>
+
+        <ImageView
+            android:id="@+id/avatarCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/avatar_car" />
 
             </androidx.appcompat.widget.Toolbar>
 
