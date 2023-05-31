@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/density_medium/baseline_density_medium_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/search/baseline_search_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,7 +33,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="baseline_density_medium_24" />
+                            <entry key="outputName" value="baseline_search_24" />
+                            <entry key="sourceFile" value="C:\JUAN-MANUEL\ort\TP3\TP3-Trabajo-Practico" />
                           </map>
                         </option>
                       </PersistentState>
